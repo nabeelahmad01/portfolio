@@ -3,7 +3,7 @@
     {
       "id": "s_0skg7tqq3n5dmqvwvkud",
       "createdAt": "2026-06-27T05:20:25.058Z",
-      "updatedAt": "2026-06-27T07:34:44.471Z",
+      "updatedAt": "2026-06-27T07:47:09.621Z",
       "country": "Local",
       "device": "Desktop"
     }
@@ -188,6 +188,51 @@
       "country": "Local",
       "device": "Desktop",
       "createdAt": "2026-06-27T07:34:44.471Z"
+    },
+    {
+      "id": 21,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:36:23.760Z"
+    },
+    {
+      "id": 22,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:39:20.624Z"
+    },
+    {
+      "id": 23,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:45:24.422Z"
+    },
+    {
+      "id": 24,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:46:18.880Z"
+    },
+    {
+      "id": 25,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:47:09.621Z"
     }
   ],
   "leads": [
