@@ -1,0 +1,345 @@
+{
+  "sessions": [
+    {
+      "id": "s_0skg7tqq3n5dmqvwvkud",
+      "createdAt": "2026-06-27T05:20:25.058Z",
+      "updatedAt": "2026-06-27T06:16:14.715Z",
+      "country": "Local",
+      "device": "Desktop"
+    }
+  ],
+  "visits": [
+    {
+      "id": 1,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:20:25.058Z"
+    },
+    {
+      "id": 2,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:33:22.283Z"
+    },
+    {
+      "id": 3,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:38:57.570Z"
+    },
+    {
+      "id": 4,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:39:09.418Z"
+    },
+    {
+      "id": 5,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:40:23.560Z"
+    },
+    {
+      "id": 6,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:42:54.888Z"
+    },
+    {
+      "id": 7,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:45:09.551Z"
+    },
+    {
+      "id": 8,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:47:41.406Z"
+    },
+    {
+      "id": 9,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:47:46.611Z"
+    },
+    {
+      "id": 10,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T05:55:32.528Z"
+    },
+    {
+      "id": 11,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:02:34.838Z"
+    },
+    {
+      "id": 12,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:08:30.988Z"
+    },
+    {
+      "id": 13,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:09:10.820Z"
+    },
+    {
+      "id": 14,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:09:21.264Z"
+    },
+    {
+      "id": 15,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:11:52.791Z"
+    },
+    {
+      "id": 16,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T06:16:14.715Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": 1,
+      "name": "Nabil Dev",
+      "email": "nabildev.webapp@gmail.com",
+      "business": "Chatbot Captured",
+      "service": "Custom E-commerce Website",
+      "message": "Lead captured via live chatbot dialogue (Conversation ID: c_2lcjytdl8hnmqvwvkug).",
+      "source": "chatbot",
+      "status": "NEW",
+      "createdAt": "2026-06-27T05:25:14.081Z"
+    }
+  ],
+  "chatConversations": [
+    {
+      "id": "c_2lcjytdl8hnmqvwvkug",
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "name": "Nabil Dev",
+      "email": "nabildev.webapp@gmail.com",
+      "status": "NEW",
+      "createdAt": "2026-06-27T05:24:46.294Z",
+      "updatedAt": "2026-06-27T06:18:08.656Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "visitor",
+          "text": "Check pricing & details",
+          "createdAt": "2026-06-27T05:24:46.294Z"
+        },
+        {
+          "id": 2,
+          "sender": "bot",
+          "text": "Nabil's services start at a very accessible $100 for custom websites, landing pages, and API integrations. The best part is: he builds a **100% free prototype demo** before you pay anything. There's zero upfront cost and zero risk. Would you like to get a demo started?",
+          "createdAt": "2026-06-27T05:24:46.298Z"
+        },
+        {
+          "id": 3,
+          "sender": "visitor",
+          "text": "I want a free demo",
+          "createdAt": "2026-06-27T05:25:05.689Z"
+        },
+        {
+          "id": 4,
+          "sender": "bot",
+          "text": "Nabil offers a **24-hour turnaround for free working demos**. We review your project requirements, Nabil codes a preliminary version, and you check it out. If you love it, we complete it. If not, you pay nothing. To request one, just type your Name, Email, and what you need, or fill out the contact form on this page!",
+          "createdAt": "2026-06-27T05:25:05.692Z"
+        },
+        {
+          "id": 5,
+          "sender": "bot",
+          "text": "Thank you, Nabil Dev! I've recorded your contact details and project interest (Custom E-commerce Website). Nabil will reach out to you at nabildev.webapp@gmail.com within the next 12 hours. Feel free to ask any other questions!",
+          "createdAt": "2026-06-27T05:25:14.085Z"
+        },
+        {
+          "id": 6,
+          "sender": "visitor",
+          "text": "Tell me about your services",
+          "createdAt": "2026-06-27T05:39:33.522Z"
+        },
+        {
+          "id": 7,
+          "sender": "bot",
+          "text": "Hi! I am Nabil's assistant. I can explain his development services, discuss project pricing (starting at $100), or help you configure a 100% free working demo of your project. What type of software or automation are you looking to build?",
+          "createdAt": "2026-06-27T05:39:33.525Z"
+        },
+        {
+          "id": 8,
+          "sender": "visitor",
+          "text": "I want a free demo",
+          "createdAt": "2026-06-27T05:39:37.344Z"
+        },
+        {
+          "id": 9,
+          "sender": "bot",
+          "text": "Our process is simple and risk-free:\n\n1. **You request a demo:** Provide your name, email, and description.\n2. **Nabil codes prototype:** You get a working preview in 24 hours.\n3. **Review & Refine:** If you love it, we complete it. If not, you pay nothing.\n\nWould you like me to open the demo registration panel for you right now?",
+          "createdAt": "2026-06-27T05:39:37.348Z"
+        },
+        {
+          "id": 10,
+          "sender": "visitor",
+          "text": "Tell me about your services",
+          "createdAt": "2026-06-27T05:43:31.375Z"
+        },
+        {
+          "id": 11,
+          "sender": "bot",
+          "text": "Hi! I am Nabil's assistant. I can explain his development services, discuss project pricing (starting at $100), or help you configure a 100% free working demo of your project. What type of software or automation are you looking to build?",
+          "createdAt": "2026-06-27T05:43:31.380Z"
+        },
+        {
+          "id": 12,
+          "sender": "visitor",
+          "text": "Check pricing & details",
+          "createdAt": "2026-06-27T06:03:31.766Z"
+        },
+        {
+          "id": 13,
+          "sender": "bot",
+          "text": "Nabil's custom services start at just **$100** for high-performance websites and chatbot integrations. Since Nabil codes everything from scratch (no bloated templates), you get raw performance. \n\nBest of all, we offer a **100% free working prototype demo** created in 24 hours. You only pay if you love it and want to proceed. What are you building? I can check if we can create a free prototype for it!",
+          "createdAt": "2026-06-27T06:03:31.783Z"
+        },
+        {
+          "id": 14,
+          "sender": "visitor",
+          "text": "Tell me about your services",
+          "createdAt": "2026-06-27T06:12:01.249Z"
+        },
+        {
+          "id": 15,
+          "sender": "bot",
+          "text": "Hi! I am Nabil's assistant. I can explain his development services, discuss project pricing (starting at $100), or help you configure a 100% free working demo of your project. What type of software or automation are you looking to build?",
+          "createdAt": "2026-06-27T06:12:01.259Z"
+        },
+        {
+          "id": 16,
+          "sender": "visitor",
+          "text": "Check pricing & details",
+          "createdAt": "2026-06-27T06:12:06.979Z"
+        },
+        {
+          "id": 17,
+          "sender": "bot",
+          "text": "Nabil's custom services start at just **$100** for high-performance websites and chatbot integrations. Since Nabil codes everything from scratch (no bloated templates), you get raw performance. \n\nBest of all, we offer a **100% free working prototype demo** created in 24 hours. You only pay if you love it and want to proceed. What are you building? I can check if we can create a free prototype for it!",
+          "createdAt": "2026-06-27T06:12:06.985Z"
+        },
+        {
+          "id": 18,
+          "sender": "visitor",
+          "text": "i want to make a website for my business soo in many time you will build and deploy my site on internet",
+          "createdAt": "2026-06-27T06:12:48.281Z"
+        },
+        {
+          "id": 19,
+          "sender": "bot",
+          "text": "Hi! I am Nabil's assistant. I can explain his development services, discuss project pricing (starting at $100), or help you configure a 100% free working demo of your project. What type of software or automation are you looking to build?",
+          "createdAt": "2026-06-27T06:12:48.288Z"
+        },
+        {
+          "id": 20,
+          "sender": "visitor",
+          "text": "i want to make a website for my business soo in many time you will build and deploy my site on internet",
+          "createdAt": "2026-06-27T06:16:21.799Z"
+        },
+        {
+          "id": 21,
+          "sender": "bot",
+          "text": "Nabil specializes in custom AI chatbots, high-end Next.js/React websites, cross-platform mobile apps (iOS & Android), semantic search engines, and Twilio voice lines. Which system matches your automation needs today?",
+          "createdAt": "2026-06-27T06:16:24.330Z"
+        },
+        {
+          "id": 22,
+          "sender": "visitor",
+          "text": "i want to built an ai agent who are work for me tu handle resturant orders",
+          "createdAt": "2026-06-27T06:17:04.594Z"
+        },
+        {
+          "id": 23,
+          "sender": "bot",
+          "text": "Excellent choice! I've launched the registration panel. Please fill out your Name and Email below, and Nabil will start coding your custom prototype immediately!",
+          "createdAt": "2026-06-27T06:17:05.304Z"
+        },
+        {
+          "id": 24,
+          "sender": "visitor",
+          "text": "ellisa is my name elisajeans34@gmail.com",
+          "createdAt": "2026-06-27T06:17:50.511Z"
+        },
+        {
+          "id": 25,
+          "sender": "bot",
+          "text": "That sounds like a very valuable business system! To lock in your order slot for a 100% free functional prototype built in 24 hours, please click the 'Request Free Demo' chip or submit your details in the contact form below.",
+          "createdAt": "2026-06-27T06:17:51.293Z"
+        },
+        {
+          "id": 26,
+          "sender": "visitor",
+          "text": "I want a free demo",
+          "createdAt": "2026-06-27T06:18:07.760Z"
+        },
+        {
+          "id": 27,
+          "sender": "bot",
+          "text": "Our process is simple and risk-free: Nabil codes a functional homepage or AI mockup within 24 hours for free. You review it, and if you love it, we proceed. Otherwise, you owe nothing. Would you like me to open the demo registration panel below?",
+          "createdAt": "2026-06-27T06:18:08.656Z"
+        }
+      ]
+    }
+  ]
+}

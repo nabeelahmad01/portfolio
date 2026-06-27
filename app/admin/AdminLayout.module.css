@@ -1,0 +1,96 @@
+.adminContainer {
+  min-height: 100vh;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+}
+
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-medium);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(43, 38, 32, 0.02);
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoImage {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoText {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-teal);
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background-color: rgba(224, 164, 88, 0.15);
+  color: var(--text-dark);
+  border: 1px solid var(--secondary-gold);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.navBlock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.publicLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.publicLink:hover {
+  color: var(--primary-teal);
+}
+
+.logoutBtn {
+  background-color: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--text-dark);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-spring-fast);
+}
+
+.logoutBtn:hover {
+  background-color: rgba(217, 83, 79, 0.05);
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+.mainContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}

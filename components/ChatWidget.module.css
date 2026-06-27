@@ -1,0 +1,419 @@
+.floatingBubble {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: var(--primary-teal);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(31, 111, 92, 0.25);
+  cursor: pointer;
+  z-index: 1100;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  transition: transform var(--transition-spring-fast), background-color var(--transition-spring-fast);
+}
+
+.floatingBubble:hover {
+  transform: scale(1.1) rotate(5deg);
+  background-color: var(--primary-teal-light);
+}
+
+/* Badge pulse effect for chat */
+.bubbleBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background-color: var(--secondary-gold);
+  border: 2px solid var(--primary-teal);
+  border-radius: 50%;
+}
+
+/* Chat Window Container */
+.chatWindow {
+  position: fixed;
+  bottom: 105px;
+  right: 30px;
+  width: 400px;
+  height: 600px;
+  max-height: calc(100vh - 130px);
+  background-color: var(--white);
+  border: 1px solid var(--border-medium);
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(43, 38, 32, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1100;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+  transition: all var(--transition-spring-medium);
+}
+
+.chatWindowActive {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* Chat Header */
+.chatHeader {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-light) 100%);
+  color: var(--white);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+}
+
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.headerStatus {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #27c93f;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(39, 201, 63, 0.2);
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+/* Chat Messages Area */
+.chatBody {
+  flex-grow: 1;
+  padding: 24px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: var(--bg-cream);
+}
+
+.message {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.botMessage {
+  align-self: flex-start;
+}
+
+.visitorMessage {
+  align-self: flex-end;
+}
+
+.bubble {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.botMessage .bubble {
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+  border-radius: 16px 16px 16px 4px;
+  box-shadow: 0 2px 8px rgba(43, 38, 32, 0.02);
+}
+
+.visitorMessage .bubble {
+  background-color: var(--primary-teal);
+  color: var(--white);
+  border-radius: 16px 16px 4px 16px;
+  box-shadow: 0 2px 8px rgba(31, 111, 92, 0.05);
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  margin-left: 6px;
+}
+
+.visitorMessage .timestamp {
+  align-self: flex-end;
+  margin-right: 6px;
+}
+
+/* 📋 Order Confirmation Receipt Card */
+.receiptCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--secondary-gold);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 4px 12px rgba(43, 38, 32, 0.03);
+  width: 100%;
+}
+
+.receiptHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 8px;
+}
+
+.receiptTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-teal);
+  letter-spacing: 0.5px;
+}
+
+.receiptRef {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.receiptList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.receiptRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.receiptLabel {
+  color: var(--text-muted);
+}
+
+.receiptVal {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.receiptFooter {
+  font-size: 0.8rem;
+  color: var(--primary-teal);
+  text-align: center;
+  font-weight: 500;
+  background-color: rgba(31, 111, 92, 0.04);
+  padding: 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+/* Inline Lead Form inside Chat */
+.inlineLeadCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(43, 38, 32, 0.03);
+}
+
+.inlineFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inlineLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.inlineInput {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.inlineBtn {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+/* Chat Input Footer */
+.chatFooter {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-light);
+  background-color: var(--white);
+  flex-shrink: 0;
+}
+
+.inputForm {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.chatInput {
+  flex-grow: 1;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.sendBtn {
+  background-color: var(--primary-teal);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-spring-fast);
+}
+
+.sendBtn:hover {
+  background-color: var(--primary-teal-light);
+}
+
+.sendBtn:disabled {
+  background-color: var(--border-medium);
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .chatWindow {
+    width: calc(100% - 40px);
+    height: 550px;
+    max-height: calc(100vh - 110px);
+    right: 20px;
+    bottom: 95px;
+  }
+  
+  .floatingBubble {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Quick replies container scroll hider */
+.quickReplies {
+  padding: 12px 16px;
+  background-color: var(--white);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  flex-shrink: 0;
+}
+
+.quickReplies::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.chipBtn {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  padding: 0 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all var(--transition-spring-fast);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  line-height: 1;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.chipTeal {
+  border: 1px solid var(--primary-teal);
+  color: var(--primary-teal);
+}
+
+.chipTeal:hover {
+  background-color: rgba(31, 111, 92, 0.05);
+  transform: translateY(-1px);
+}
+
+.chipGold {
+  border: 1px solid var(--secondary-gold);
+  color: var(--text-dark);
+  background-color: rgba(224, 164, 88, 0.1);
+}
+
+.chipGold:hover {
+  background-color: rgba(224, 164, 88, 0.2);
+  transform: translateY(-1px);
+}
+

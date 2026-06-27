@@ -1,0 +1,70 @@
+.viewport {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-cream);
+  padding: 20px;
+}
+
+.loginCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-medium);
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(43, 38, 32, 0.04);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.logoImage {
+  height: 48px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.submitBtn {
+  width: 100%;
+}
+
+.errorBox {
+  background-color: rgba(217, 83, 79, 0.08);
+  border-left: 3px solid #d9534f;
+  color: #d9534f;
+  padding: 10px 14px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}

@@ -1,0 +1,65 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Session {
+  id           String             @id
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+  country      String             @default("Unknown")
+  device       String             @default("Desktop")
+  visits       Visit[]
+  chatbotLeads ChatConversation[]
+}
+
+model Visit {
+  id        Int      @id @default(autoincrement())
+  sessionId String
+  path      String
+  referrer  String?
+  country   String   @default("Unknown")
+  device    String   @default("Desktop")
+  createdAt DateTime @default(now())
+
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+model Lead {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String
+  business   String?
+  service    String?
+  message    String?
+  source     String   @default("contact_form") // "contact_form" or "chatbot"
+  status     String   @default("NEW") // "NEW", "CONTACTED", "CONVERTED", "NOT_INTERESTED"
+  createdAt  DateTime @default(now())
+}
+
+model ChatConversation {
+  id        String        @id
+  sessionId String?
+  name      String?       @default("")
+  email     String?       @default("")
+  status    String        @default("NEW") // "NEW", "CONTACTED", "CONVERTED"
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  messages  ChatMessage[]
+
+  session Session? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+}
+
+model ChatMessage {
+  id             Int      @id @default(autoincrement())
+  conversationId String
+  sender         String   // "visitor" or "bot"
+  text           String
+  createdAt      DateTime @default(now())
+
+  conversation ChatConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+}
