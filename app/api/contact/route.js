@@ -22,7 +22,7 @@ export async function POST(request) {
     // Simulate Email Dispatch Notification to Nabil
     console.log(`
 ======================================================
-📧 EMAIL NOTIFICATION SENT TO: contact@nabilahmad.com
+📧 EMAIL NOTIFICATION SENT TO: nabildev.wepapp@gmail.com
 ======================================================
 Subject: New Project Inquiry from ${name}
 From: ${email}

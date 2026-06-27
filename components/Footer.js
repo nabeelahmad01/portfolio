@@ -74,14 +74,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Nabil Ahmad. All rights reserved. 100% custom coded.
           </span>
           <div className={styles.socials}>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a href="https://github.com/nabeelahmad01" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               GitHub
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-              LinkedIn
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-              Twitter
             </a>
           </div>
         </div>

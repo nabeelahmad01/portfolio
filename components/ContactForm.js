@@ -95,28 +95,33 @@ export default function ContactForm() {
 
             <div className={styles.detailsList}>
               <div className={styles.detailItem}>
-                <div className={styles.iconWrapper}>
-                  <Mail size={18} />
-                </div>
-                <div className={styles.detailTextBlock}>
-                  <span className={styles.detailLabel}>Direct Mail</span>
-                  <span className={styles.detailValue}>contact@nabilahmad.com</span>
-                </div>
+                <a href="mailto:nabildev.wepapp@gmail.com" className={styles.detailLink} style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'inherit' }}>
+                  <div className={styles.iconWrapper}>
+                    <Mail size={18} />
+                  </div>
+                  <div className={styles.detailTextBlock}>
+                    <span className={styles.detailLabel}>Direct Mail</span>
+                    <span className={styles.detailValue}>nabildev.wepapp@gmail.com</span>
+                  </div>
+                </a>
+              </div>
+
+              <div className={styles.detailItem}>
+                <a href="https://wa.me/923187371071" target="_blank" rel="noopener noreferrer" className={styles.detailLink} style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'inherit' }}>
+                  <div className={styles.iconWrapper}>
+                    <Phone size={18} />
+                  </div>
+                  <div className={styles.detailTextBlock}>
+                    <span className={styles.detailLabel}>WhatsApp</span>
+                    <span className={styles.detailValue} style={{ color: 'var(--primary-teal)', fontWeight: 600 }}>+92 318 7371071</span>
+                  </div>
+                </a>
               </div>
 
               <div className={styles.detailItem}>
                 <div className={styles.iconWrapper}>
-                  <MapPin size={18} />
-                </div>
-                <div className={styles.detailTextBlock}>
-                  <span className={styles.detailLabel}>Based In</span>
-                  <span className={styles.detailValue}>Dubai, United Arab Emirates (Open to Global Remote)</span>
-                </div>
-              </div>
-
-              <div className={styles.detailItem}>
-                <div className={styles.iconWrapper}>
-                  <Phone size={18} />
+                  <Phone size={18} style={{ opacity: 0 }} />
+                  <Mail size={18} style={{ display: 'none' }} />
                 </div>
                 <div className={styles.detailTextBlock}>
                   <span className={styles.detailLabel}>Demo Response</span>

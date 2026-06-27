@@ -3,7 +3,7 @@
     {
       "id": "s_0skg7tqq3n5dmqvwvkud",
       "createdAt": "2026-06-27T05:20:25.058Z",
-      "updatedAt": "2026-06-27T06:16:14.715Z",
+      "updatedAt": "2026-06-27T07:18:14.194Z",
       "country": "Local",
       "device": "Desktop"
     }
@@ -152,6 +152,15 @@
       "country": "Local",
       "device": "Desktop",
       "createdAt": "2026-06-27T06:16:14.715Z"
+    },
+    {
+      "id": 17,
+      "sessionId": "s_0skg7tqq3n5dmqvwvkud",
+      "path": "/",
+      "referrer": "http://localhost:3000/",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-27T07:18:14.194Z"
     }
   ],
   "leads": [

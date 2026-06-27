@@ -30,50 +30,50 @@ export default function Work() {
 
   const projects = [
     {
-      name: 'OmniChat AI Agent',
-      desc: 'Bespoke customer support chatbot integrated directly into an e-commerce platform, enabling context-aware product queries and checkout help.',
-      metricLabel: 'Key Result',
-      metricValue: '68% reduction in customer support tickets',
+      name: 'AI Chatbot Integration Demo',
+      desc: 'This demo shows how a custom AI chatbot can be trained on a business\'s own data to answer customer questions and capture leads automatically.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'Automated lead capture + instant contextual responses',
       tags: ['OpenAI API', 'React', 'Node.js', 'MongoDB', 'Stripe'],
       img: '/images/service_chatbot.png'
     },
     {
-      name: 'LaunchFlow SaaS Portal',
-      desc: 'Bespoke web dashboard and conversion-optimized checkout pipeline built from scratch with custom serverless handlers.',
-      metricLabel: 'Key Result',
-      metricValue: '+42% user conversion rate increase',
+      name: 'E-Commerce Storefront Demo',
+      desc: 'This demo shows a custom e-commerce storefront with a fully optimized stripe-powered checkout pipeline built for performance and speed.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'Bespoke checkout lanes + conversion optimized load speeds',
       tags: ['Next.js', 'React', 'Node.js', 'PostgreSQL', 'Stripe'],
       img: '/images/service_website.png'
     },
     {
-      name: 'LexiSearch Directory',
-      desc: 'Contextual AI smart search widget that processes natural language intent using embeddings, showing instant suggestions to visitors.',
-      metricLabel: 'Key Result',
-      metricValue: 'Latency reduced to under 45ms average',
+      name: 'Smart Search Demo',
+      desc: 'This demo shows how an AI smart search widget processes natural language queries using vector embeddings to display context-aware matches instantly.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'Semantic search listings + sub-50ms vector query matching',
       tags: ['OpenAI API', 'Next.js', 'Node.js', 'PostgreSQL'],
       img: '/images/service_search.png'
     },
     {
-      name: 'CallAgent Voice Butler',
-      desc: 'A voice calling system linked to ElevenLabs neural speech synthesizers, Twilio, and automated n8n workflows to schedule demo calls.',
-      metricLabel: 'Key Result',
-      metricValue: 'Resolves 2,000+ support calls daily 24/7',
+      name: 'AI Voice Calling Demo',
+      desc: 'This demo shows a neural telephony agent built with Twilio and ElevenLabs voice lines, connected to webhooks to automate customer call routing.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'Neural voice responses + automatic CRM routing pipelines',
       tags: ['Twilio', 'ElevenLabs', 'n8n', 'Node.js'],
       img: '/images/service_voice.png'
     },
     {
-      name: 'FitSync Mobile App',
-      desc: 'Premium iOS and Android fitness platform featuring real-time offline tracking data synching and chat integrations.',
-      metricLabel: 'Key Result',
-      metricValue: '50,000+ App Store downloads in 60 days',
+      name: 'Mobile App Demo',
+      desc: 'This demo shows a cross-platform mobile application interface featuring fluid native animations, offline tracking, and server database synchronization.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'React Native framework + offline-first database sync',
       tags: ['React Native', 'Node.js', 'PostgreSQL', 'OpenAI API'],
       img: '/images/service_app.png'
     },
     {
-      name: 'Apex E-Store Storefront',
-      desc: 'High-speed custom Next.js storefront featuring localized checkout lanes, stripe subscriptions, and admin portals.',
-      metricLabel: 'Key Result',
-      metricValue: '+180% speed upgrade & +24% order average',
+      name: 'Custom Subscription Dashboard Demo',
+      desc: 'This demo shows a SaaS admin interface built with Next.js, displaying analytical stats, traffic numbers, and active stripe customer billing profiles.',
+      metricLabel: 'What This Demonstrates',
+      metricValue: 'Bespoke database administration + stripe billing control logs',
       tags: ['Next.js', 'React', 'MongoDB', 'Stripe'],
       img: '/images/service_website.png'
     }
@@ -88,10 +88,13 @@ export default function Work() {
       <div className="container">
         {/* Header */}
         <div className={styles.sectionHeader}>
-          <span className={styles.subtitle}>Selected Work</span>
+          <span className={styles.subtitle}>Capability Demos</span>
           <h2 className={styles.title}>Production systems built for performance.</h2>
           <p className={styles.desc}>
-            A sample of active client integrations showing how clean code and AI automations drive real business numbers.
+            A sample of visual prototype systems showing how clean code and AI integrations drive business operations.
+          </p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '16px', fontStyle: 'italic', opacity: 0.85 }}>
+            * These are capability demos showcasing what I can build — available for you to review live before you commit to a project.
           </p>
         </div>
 
