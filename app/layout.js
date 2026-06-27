@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${plusJakarta.variable} ${jetbrains.variable}`}>
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body>
         {children}
