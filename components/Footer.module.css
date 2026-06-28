@@ -111,6 +111,10 @@
   color: var(--primary-teal);
 }
 
+.fiverrSocialLink:hover {
+  color: #1dbf73;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;

@@ -326,6 +326,12 @@ export default function ChatWidget() {
             See Services
           </button>
           <button 
+            onClick={() => handleSendMessage(null, "Hire on Fiverr")}
+            className={`${styles.chipBtn} ${styles.chipGreen}`}
+          >
+            Hire on Fiverr
+          </button>
+          <button 
             onClick={() => {
               handleSendMessage(null, "I want a free demo");
               setShowLeadForm(true);

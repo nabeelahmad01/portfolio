@@ -43,6 +43,19 @@
   border: 1px solid rgba(31, 111, 92, 0.12);
 }
 
+.fiverrTrustBadge {
+  background-color: rgba(29, 191, 115, 0.08);
+  border-color: rgba(29, 191, 115, 0.2);
+  color: #1dbf73;
+  transition: all var(--transition-spring-fast);
+}
+
+.fiverrTrustBadge:hover {
+  background-color: rgba(29, 191, 115, 0.15);
+  border-color: #1dbf73;
+  transform: translateY(-2px);
+}
+
 .title {
   font-size: 3.5rem;
   color: var(--text-dark);

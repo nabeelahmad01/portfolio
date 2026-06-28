@@ -417,3 +417,14 @@
   transform: translateY(-1px);
 }
 
+.chipGreen {
+  border: 1px solid #1dbf73;
+  color: #1dbf73;
+  background-color: rgba(29, 191, 115, 0.08);
+}
+
+.chipGreen:hover {
+  background-color: rgba(29, 191, 115, 0.15);
+  transform: translateY(-1px);
+}
+

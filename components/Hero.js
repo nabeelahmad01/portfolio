@@ -80,6 +80,14 @@ export default function Hero() {
               <span className={styles.trustBadge}>
                 <CheckCircle2 size={14} /> Free Demo Before You Pay
               </span>
+              <a 
+                href="https://www.fiverr.com/nabeelahmad208?public_mode=true" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={`${styles.trustBadge} ${styles.fiverrTrustBadge}`}
+              >
+                <CheckCircle2 size={14} /> 5★ Rated on Fiverr
+              </a>
             </div>
 
             <h1 className={styles.title}>
@@ -118,6 +126,14 @@ export default function Hero() {
                 onClick={(e) => smoothScrollTo(e, 'contact')}
               >
                 Get a free demo
+              </a>
+              <a 
+                href="https://www.fiverr.com/nabeelahmad208?public_mode=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-fiverr"
+              >
+                Order on Fiverr
               </a>
             </div>
           </div>

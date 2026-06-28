@@ -74,6 +74,16 @@ export default function Navbar() {
             </li>
             <li>
               <a 
+                href="https://www.fiverr.com/nabeelahmad208?public_mode=true" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={`${styles.navLink} ${styles.fiverrBtn}`}
+              >
+                Fiverr
+              </a>
+            </li>
+            <li>
+              <a 
                 href="#contact" 
                 className={`${styles.navLink} ${styles.ctaBtn}`} 
                 onClick={(e) => handleNavClick(e, 'contact')}

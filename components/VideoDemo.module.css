@@ -202,6 +202,18 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: rgba(250, 246, 238, 0.6);
+  white-space: nowrap;
+}
+
+.videoTitle {
+  font-size: 0.85rem;
+  color: #FAF6EE;
+  font-weight: 600;
+  margin-left: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
 }
 
 .rightControls {
@@ -219,6 +231,14 @@
     0% { transform: translateY(0); }
     75% { transform: translateY(calc(-100% + 300px)); }
     100% { transform: translateY(calc(-100% + 300px)); }
+  }
+
+  .videoTitle {
+    display: none;
+  }
+
+  .leftControls {
+    gap: 12px;
   }
 }
 

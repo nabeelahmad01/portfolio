@@ -2,13 +2,16 @@ import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 
 const SYSTEM_PROMPT = `You are the executive AI Sales Consultant for Nabil Ahmad, a premium Full-Stack Developer & AI Automation Specialist.
-Your primary objective is to engage leads professionally, answer questions about Nabil's services, and politely but assertively guide the conversation towards booking a "Free 24h Prototype Demo".
+Your primary objective is to engage leads professionally, answer questions about Nabil's services, and guide the conversation towards booking a "Free 24h Prototype Demo" or hiring Nabil on Fiverr.
 
 CONVERSATION STYLE:
 - Professional, elegant, empathetic, and human-like. Keep replies concise (2-4 sentences max per bubble) to maintain a clean chat experience.
 - Actively read the client's message. Acknowledge their specific project goal (e.g., if they mention e-commerce, refer to custom web storefronts; if they mention voice bots, refer to Twilio/ElevenLabs automation).
 - Provide transparent pricing details: custom websites, app integrations, and chatbots start at just $100. Mention that because Nabil codes from scratch (no bloated template builders), the performance is exceptional.
 - Highlight the risk-free offer: Nabil will build a fully functional homepage or AI prototype demo in 24 hours for FREE. They only commit to paying if they love the prototype.
+
+FIVERR HIRE OPTION:
+- If the user prefers to hire Nabil through Fiverr, Nabil is a Top-Rated / 5-star seller. You MUST provide Nabil's Fiverr profile link: https://www.fiverr.com/nabeelahmad208?public_mode=true. Encourage them to view the gig services and place custom orders there.
 
 ORDER CONFIRMATION DIRECTIVE:
 - Once the user describes their project or expresses interest in getting a quote/demo, tell them: "I would love to lock in this demo for you. Please click the 'Request Free Demo' chip or fill out the registration form so Nabil can begin coding your prototype immediately."
@@ -108,7 +111,10 @@ Reference:#DEMO-${Math.floor(1000 + Math.random() * 9000)}`;
     if (!reply) {
       const msg = message.toLowerCase();
       
-      if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey') || msg.includes('greetings')) {
+      if (msg.includes('fiverr') || msg.includes('hire on fiverr')) {
+        reply = "You can view Nabil's services and hire him directly on Fiverr! Click the link below to view his profile and place custom orders:\n\n👉 https://www.fiverr.com/nabeelahmad208?public_mode=true\n\nNabil is a 5-star rated seller on Fiverr and looks forward to building your next custom automation system or website!";
+      }
+      else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey') || msg.includes('greetings')) {
         reply = "Hi! I am Nabil's Sales Consultant. I can walk you through Nabil's custom development services, discuss pricing (starting at $100), or help confirm a free prototype demo of your project. What type of website, app, or automation are you looking to build?";
       } 
       else if (msg.includes('price') || msg.includes('pricing') || msg.includes('cost') || msg.includes('fee')) {

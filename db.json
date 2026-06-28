@@ -6,6 +6,13 @@
       "updatedAt": "2026-06-27T07:47:09.621Z",
       "country": "Local",
       "device": "Desktop"
+    },
+    {
+      "id": "s_gi4c40hfvsmqxio4ph",
+      "createdAt": "2026-06-28T08:18:13.931Z",
+      "updatedAt": "2026-06-28T08:18:13.931Z",
+      "country": "Local",
+      "device": "Desktop"
     }
   ],
   "visits": [
@@ -233,6 +240,15 @@
       "country": "Local",
       "device": "Desktop",
       "createdAt": "2026-06-27T07:47:09.621Z"
+    },
+    {
+      "id": 26,
+      "sessionId": "s_gi4c40hfvsmqxio4ph",
+      "path": "/",
+      "referrer": "",
+      "country": "Local",
+      "device": "Desktop",
+      "createdAt": "2026-06-28T08:18:13.931Z"
     }
   ],
   "leads": [

@@ -147,6 +147,16 @@ p {
   transform: translateY(-3px) scale(1.02);
 }
 
+.btn-fiverr {
+  background-color: #1dbf73;
+  color: var(--white);
+}
+
+.btn-fiverr:hover {
+  background-color: #159b5c;
+  transform: translateY(-3px) scale(1.02);
+}
+
 /* Focus and input styling */
 input, textarea, select {
   font-family: var(--font-sans);

@@ -103,6 +103,19 @@
   transform: translateY(-2px);
 }
 
+.fiverrBtn {
+  color: #1dbf73 !important;
+  font-weight: 600;
+}
+
+.fiverrBtn::after {
+  background-color: #1dbf73 !important;
+}
+
+.fiverrBtn:hover {
+  color: #159b5c !important;
+}
+
 /* Mobile Navigation Toggle */
 .mobileToggle {
   display: none;

@@ -267,7 +267,7 @@ export default function VideoDemo() {
                 <div className={styles.timecode}>
                   <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
                 </div>
-                <span style={{ fontSize: '0.85rem', color: '#FAF6EE', fontWeight: 600, marginLeft: '8px' }}>
+                <span className={styles.videoTitle}>
                   📺 {slides[activeSlide].title}
                 </span>
               </div>

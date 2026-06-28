@@ -77,6 +77,9 @@ export default function Footer() {
             <a href="https://github.com/nabeelahmad01" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               GitHub
             </a>
+            <a href="https://www.fiverr.com/nabeelahmad208?public_mode=true" target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ${styles.fiverrSocialLink}`}>
+              Fiverr
+            </a>
           </div>
         </div>
       </div>

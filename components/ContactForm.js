@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import styles from './ContactForm.module.css';
-import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, CheckCircle, ShoppingBag } from 'lucide-react';
 
 export default function ContactForm() {
   const [isVisible, setIsVisible] = useState(false);
@@ -114,6 +114,18 @@ export default function ContactForm() {
                   <div className={styles.detailTextBlock}>
                     <span className={styles.detailLabel}>WhatsApp</span>
                     <span className={styles.detailValue} style={{ color: 'var(--primary-teal)', fontWeight: 600 }}>+92 318 7371071</span>
+                  </div>
+                </a>
+              </div>
+
+              <div className={styles.detailItem}>
+                <a href="https://www.fiverr.com/nabeelahmad208?public_mode=true" target="_blank" rel="noopener noreferrer" className={styles.detailLink} style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'inherit' }}>
+                  <div className={styles.iconWrapper} style={{ color: '#1dbf73', backgroundColor: 'rgba(29, 191, 115, 0.08)', borderColor: 'rgba(29, 191, 115, 0.2)' }}>
+                    <ShoppingBag size={18} />
+                  </div>
+                  <div className={styles.detailTextBlock}>
+                    <span className={styles.detailLabel}>Fiverr Gig</span>
+                    <span className={styles.detailValue} style={{ color: '#1dbf73', fontWeight: 600 }}>Order on Fiverr</span>
                   </div>
                 </a>
               </div>
